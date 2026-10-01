@@ -1,0 +1,301 @@
+/*Mala práctica
+html{
+    font-size: 20px;
+}*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'Cursiva';
+    src: url(../Roboto/Roboto-Italic-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: 'Negrita';
+    src: url(../Roboto/static/Roboto-ExtraBold.ttf);
+}
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Spartan", sans-serif;
+}
+/*Selectores de etiquetas*/
+body {
+    font-family: 'FuenteCursiva';
+    background-color: #160a16;
+    color: #fff;
+}
+
+h2 {
+    color:blue;
+    font-size: 28px;
+}
+
+span {
+    color:rgb(190, 165, 0);
+    font-weight: bold;
+}
+
+/*Selector de clase*/
+.destacado {
+    color:green;
+    font-style: italic;
+}
+
+/*Selector de ID
+#banner{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+}*/
+
+.subtitulo{
+    color:blueviolet;
+    font-size: 38px;
+}
+
+.hipervinculo-style{
+    text-decoration: none;
+    color: green;
+    margin: 10px;
+}
+
+.banner {
+    background-image: url("/img/banner/banner.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.padre{
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px auto;
+    align-content: center;
+    border: 5px solid #9d1a1a;
+    text-align: center;
+    color: lightblue;
+    width: 600px;
+    height: 350px;
+}
+
+
+.hijo{
+    font-size: 0.5em;
+    margin: 3px;
+    border: 3px solid #a73d3d;
+    width: 35vw;
+    height: 40vh;
+    overflow: auto;
+}
+
+.hijo p{
+    font-size: 1em;
+    margin: 3px;
+    align-content: center;
+    color: rgb(0, 203, 119);
+    border: 3px solid green;
+    width: 30vw;
+    height: 30vh;
+    overflow: auto;
+}
+
+.instagram{
+    font-family: 'FuenteNegrita', Times, serif;
+    color:rgb(0, 203, 119);
+}
+
+.box {
+    width: 800px;
+    height: 600px;
+    border: 3px solid whitesmoke;
+    margin: 20px;
+    padding: 30px;
+    font-family: 'Cursiva';
+    border-radius: 15px;
+}
+
+.posiciones {
+    width: 800px;
+    height: 600px;
+    border: 3px solid whitesmoke;
+    margin: 20px;
+    padding: 30px;
+    font-family: 'Cursiva';
+    border-radius: 15px;
+    position: relative;
+}
+.static {
+    height: 40px;
+    padding: 2px;
+    position: static;
+    align-content: center;
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 10px;
+
+}
+
+.absolute {
+    height: 40px;
+    weight: 600px;
+    align-content: center;
+    top: 70px;
+    left: 30px;
+    right: 30px;
+    padding: 2px;
+    position: absolute;
+    background-color: lightcoral;
+    color: black;
+    border-radius: 10px;
+}
+
+.relative {
+    height: 40px;
+    position: relative;
+    top: 40px;
+    bottom: 20px;
+    align-content: center;
+    left: 0px;
+    right: -20px;
+    background-color: green;
+    border-radius: 10px;
+
+}
+
+.fixed { /*Respeceto a la ventana del navegador.*/
+    height: 40px;
+    position: fixed;
+    align-content: center;
+    background-color: lightskyblue;
+    left: 52px;
+    right: 478px;
+    top: 385px;
+    color: black;
+    border-radius: 10px;
+}
+
+.sticky {
+    height: 40px;
+    align-content: center;
+    top: 84.5vh;
+    position: sticky;
+    background-color: lightgoldenrodyellow;
+    color: black;
+    border-radius: 10px;
+}
+
+.grid-container{ /*Flexbox trabaja solo en fila o columna. Esto trabaja en cuadrícula*/
+    width: 100%;
+    height: 100%;
+    border: 5px solid #aaa;
+    margin: 0 auto;
+    display: grid;
+    /*grid-template-columns: 200px 200px 200px 200px;*/
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(3, 200px) ;
+    gap: 0px 0px;
+    background-color: #fff;
+}
+
+.album-destacado{
+    background-color: #9d1a1a;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.album{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #160a16;
+}
+
+.album:hover{
+    width: 205px;
+    height: 205px;
+    border-radius: 5px;
+    border-width: 2px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.album:hover .album-title{
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: all 0.2s ease; /*Hecho con IA Obviamente*/
+}
+
+.one{
+    background-color: orange;
+}
+.one:hover{
+    background-color: rgb(255, 119, 0);
+}
+
+.two{
+    background-color: orangered;
+}
+.two:hover{
+    background-color: rgb(255, 8, 0);
+}
+.three{
+    background-color: blue;
+}
+.three:hover{
+    background-color: rgb(0, 0, 183);
+}
+
+.four{
+    background-color: green;
+}
+
+.four:hover{
+    background-color: rgb(3, 102, 3);
+}
+
+.five{
+    background-color: purple;
+}
+
+.five:hover{
+    background-color: rgb(90, 7, 90);
+}
+
+.six{
+    background-color: rgb(255, 0, 0);
+}
+
+.six:hover{
+    background-color: rgb(153, 4, 4);
+}
+
+.seven{
+    background-color: rgb(255, 0, 255);
+}
+
+.seven:hover{
+    background-color: rgb(142, 0, 142);
+}
+
+.eight{
+    background-color: purple;
+}
+
+.eight:hover{
+    background-color: rgb(90, 7, 90);
+}
+
+.album-title{
+    font-style: oblique;
+    font-weight: 100;
+    color: #160a16;
+}
+
+.album-title:hover{
+    font-weight: bold;
+}

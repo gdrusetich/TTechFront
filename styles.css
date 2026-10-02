@@ -24,7 +24,7 @@ html{
 /*Selectores de etiquetas*/
 body {
     font-family: 'FuenteCursiva';
-    background-color: #160a16;
+    background-color: #160a16 !important;
     color: #fff;
 }
 
@@ -197,7 +197,7 @@ span {
     grid-template-columns: repeat(4, 200px);
     grid-template-rows: repeat(3, 200px) ;
     gap: 0px 0px;
-    background-color: #fff;
+    background-color: #6d6d6d99;
 }
 
 .album-destacado{

@@ -4,67 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,
     initial-scale=1.0">
-    <title>Talento Tech E-Commerce</title>
+    <title>Dinastía Gaming</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
 </head>
 <body>
-        
-    <header>    <!-- Encabezado-->
-        <img src="logo.png" alt="Logo de tu sitio web" width="40" height="40">
-        <h1>Talento Tech</h1>
-        <h2> Front End </h2>
+    <header class="header">    <!-- Encabezado-->
+        <div class="header-saludo">
+            <img src="logo.png" alt="Logo de tu sitio web" class="header-logo">
+            <p>Hola, invitado!</p>
+        </div>
+        <div class="header-frase">
+            <h1>Bienvenido a Talento Tech - Front End</h1>
+        </div>
+        <div class="header-login">
+            <button class="btn-login">Ingresar</button>
+        </div>
     </header>
 
     <main> <!-- Contenido principal -->
-        <nav>
-            <ul>    
-                <li><a href="https://www.promiedos.com.ar/"> Ingresa para saber cuando juega tu equipo </a></li>
-                <li><a href="https://demo-product.up.railway.app/"> Ingresa para ver productos </a></li>
-                <li><a href="https://www.instagram.com/"> Ingresa para perder tiempo de tu vida </a></li>
-            </ul>
-        </nav>
+        <section class="banner">
+            <div class="banner-contenido">
+                <a href="index.html">
+<!--                    <img class ="banner-img" src="img/banner.jpeg" > -->
+                </a>
+            </div>
+        </section>
 
-        <nav> 
-            <a href="index.html">
-                <img src="/img/logo1.png" alt="Logo de la tienda" width="30" height="30">
+        <section class = "categorias">
+            <div class="categorias-flex">
+                <a href="pages/teclados.html" class ="categoria">
+                    <img src="img/teclados.jpg" class="categoria-img">
+                    <h3 class="categoria-nombre">Teclados</h3>
+                </a>
+                <a href="pages/mouse.html" class = "categoria">
+                    <img src="img/mouse.jfif" class="categoria-img">
+                    <h3 class="categoria-nombre"> Mouse</h3>
+                </a>
+                <a href="pages/auriculares.html" class = "categoria">
+                    <img src="img/auriculares.jfif" class="categoria-img">
+                    <h3 class="categoria-nombre"> Auriculares </h3>
 
-            </a>
-            <ul>   <!--Lista sin Enumerar-->
-                <li>  <a class="hipervinculo-style" href="">Inicio</a></li>
-                <li>  <a class="hipervinculo-style" href="">Nosotros</a></li>
-                <li>  <a class="hipervinculo-style" href="">Productos</a></li>
-                <li>  <a class="hipervinculo-style" href="">Servicios</a></li>
-                <li>  <a class="hipervinculo-style" href="/pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+                </a>
+            </div>
+        </section>
+
+        <section class="banner-destacados">
+            <div class="banner-destacados-content">
+                <h2 class ="titulo-destacados"> Nuevos Lanzamientos</h2>
+                <h4 class="subtitulo-destacados">Colección Avengers - Edición Limitada </h4>
+                <h2 class="frase-destacados">¡Conseguilos antes que se agoten!</h2>
+            </div>
+        </section>
+
+        <section class="productos-destacados">
+            <h1 class="productos-destacados-titulo"> Colección Avengers</h1>
+            <div class="productos-destacados-grid">
+                <div class="producto">
+                    <img src="img/combo avengers.jfif" class="producto-destacado-img">
+                    <div class="producto-destacado-titulo"> Combo Teclado Mouse</div>
+                    <p class="producto-destacado-precio">$48.999</p>
+                </div>
+                <div class="producto">
+                    <img src="img/teclado-america.jfif" class="producto-destacado-img">
+                    <div class="producto-destacado-titulo"> Teclado Capitán América</div>
+                    <p class="producto-destacado-precio">$32.999</p>
+                </div>
+                <div class="producto">
+                    <img src="img/teclado-ironman.jfif" class="producto-destacado-img">
+                    <div class="producto-destacado-titulo"> Teclado Iron Man</div>
+                    <p class="producto-destacado-precio">$32.999</p>
+                </div>
+                <div class="producto">
+                    <img src="img/auricular araña.jfif" class="producto-destacado-img">
+                    <div class="producto-destacado-titulo"> Auricular Spiderman Black</div>
+                    <p class="producto-destacado-precio">$18.999</p>
+                </div>
+                <div class="producto">
+                    <img src="img/auricular america.jfif" class="producto-destacado-img">
+                    <div class="producto-destacado-titulo"> Auricular Capitán América</div>
+                    <p class="producto-destacado-precio">$18.000</p>
+                </div>
+                <div class="producto">
+                    <img src="img/auricular avengers.jfif" class="producto-destacado-img">
+                    <div class="producto-destacado-titulo"> Más...</div>
+                    <p class="producto-destacado-precio"></p>
+                </div>
+            </div>
+
+        </section>
 
         <video controls poster="preview.jpg" width="400" height="200">
             <source src="video.mp4" type="video/mp4">
             Tu navegador no soporta la reproducción del video.
         </video>
-        <p>Para publicar los productos que la gente vende, que no tiene dinero para pagar un local,
-            y tiene todos los productos amontonados en una habitación de su departamento
-        </p>
-        <section class="banner">
-                <h2 class ="subtitulo"> Productos
-                    <span class="destacados">Destacados</span>
-                </h2>
 
-                <h4 class="destacados">Ofertas que no te podés perder</h4>
-                <h2>Hasta <span> 70% OFF</span> - Electrónica, Moda y más</h2>
-        <!--<input type = "button" value="Ver más">  //Recomendable para Formularios-->
-        </section>
+        <button>Ver más</button>
 
-        </section>
-            <button>Ver más</button>
-
-            <form action="">
-                <input type="text" placeholder="ingresa tu email">
-                <input type="submit" value="Enviar">
-            </form>
+        <form action="">
+            <input type="text" placeholder="ingresa tu email">
+            <input type="submit" value="Enviar">
+        </form>
 
         <section>
             <form action="" method="post">
@@ -124,46 +166,24 @@
         <div class="posiciones">
             <div class = "static">Static</div>
             <div class = "absolute">Absolute</div>
-            <div class = "fixed">Fixed</div>
+<!--        <div class = "fixed">Fixed</div>-->
+
             <div class = "sticky">Sticky</div>
             <div class = "relative">Relative</div>
         </div>
 
-        <h1>CSS Grid</h1>
-        <div class="grid-container">
-            <div class="album album-destacado">
-                <div class="album-title"> Mi Album Destacado</div>
-            </div>
-            <div class="album one"> 
-                <div class="album-title"> Que Demoños!</div>
-            </div>
-            <div class="album two">
-                <div class="album-title"> No Way!!!</div>
-            </div>
-            <div class="album three">         
-                <div class="album-title"> Tu Vieja</div>
-            </div>
-            <div class="album four">          
-                <div class="album-title"> Mi Vieja</div>
-            </div>
-            <div class="album five">         
-                <div class="album-title"> Abuela la la la la la</div>
-            </div>
-            <div class="album six">         
-                <div class="album-title"> Album Seis</div>
-            </div>
-            <div class="album seven">         
-                <div class="album-title"> Album Siete</div>
-            </div>
-            <div class="album eight">         
-                <div class="album-title"> Album Ocho</div>
-            </div>
-        </div>
+
     </main>
 
-    <p>© 2026 TalentoTech E-Commerce. Todos los derechos reservados.</p>
+    <a href="https://wa.me/541159737028" class = "btn-whatsapp"></a>
+
+    <footer>
+        <a class="hipervinculo-style" href="/pages/contacto.html">
+            <p>© 2026 TalentoTech E-Commerce. Todos los derechos reservados.</p>        
+        </a>
+    </footer>
+
 
 </body>
 
-
-</html>
+</html> 

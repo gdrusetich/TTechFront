@@ -101,6 +101,7 @@ span {
 }
 
 .categorias{
+
     border: 2px solid;
     color:#9d1a1a;
     border-radius: 5px;
@@ -112,6 +113,7 @@ span {
     align-items: center;
     border: 2px solid;
     color: green;
+    flex-wrap: nowrap;
 }
 
 .categoria{
@@ -128,10 +130,11 @@ span {
 }
 
 .categoria-img{
+
     border-radius: 50%;
     overflow: hidden;
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
 }
 
 .categoria-nombre{
@@ -447,11 +450,14 @@ span {
 
     .categorias-flex{
         flex-wrap: nowrap;
+        gap: 8px;
     }
 
     .categoria{
         max-width: 150px;
-        min-width: 80px;
+        min-width: 50px;
+        margin: 0;
+        height: auto;
 
     }
 

@@ -129,12 +129,13 @@ span {
 }
 
 .categoria{
+    display:flex;
+    flex-direction: column;
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 0;
     max-width: 150px;
     min-width: 50px;
-    margin: 30px;
     border: 3px solid;
     color:rgb(0, 0, 183);
     max-height: 150px;
@@ -159,6 +160,7 @@ span {
     color:rgba(196, 196, 209, 0.696);
     text-transform: uppercase;
     text-align: center;
+    width: 100%;
 }
 
 .categoria-nombre:hover{
@@ -204,7 +206,7 @@ span {
 
 .productos-destacados-grid{
     display: grid;
-    grid-template-columns: repeat(3,220px);
+    grid-template-columns: repeat(3,1fr);
     gap: 25px;
     margin: 0;
     justify-content: center;

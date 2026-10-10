@@ -20,6 +20,7 @@ html{
     padding:0;
     box-sizing: border-box;
     font-family: "Spartan", sans-serif;
+    outline: 1px solid red;
 }
 /*Selectores de etiquetas*/
 body {

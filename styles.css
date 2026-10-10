@@ -53,9 +53,19 @@ body {
 }
 
 .header-frase{
+    height: 30px;
     display: flex;
     align-items: center;
-    color:rgb(0, 0, 0)
+    color:rgb(0, 119, 255)
+}
+
+.header-repo{
+    font-size: 1rem;
+    margin: 10px;
+    gap: 10px;
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    transition: color 0.2s ease;
 }
 
 .header-login{

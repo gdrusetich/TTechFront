@@ -121,17 +121,24 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 15px;
+    padding: 15px;
     border: 2px solid;
     color: green;
     flex-wrap: nowrap;
 }
 
 .categoria{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    max-width: 150px;
+    min-width: 50px;
     margin: 30px;
     border: 3px solid;
     color:rgb(0, 0, 183);
-    width: 150px;
-    height: 150px;
+    max-height: 150px;
+    min-height: 50px;
     text-decoration: none;
 }
 
@@ -140,7 +147,6 @@ span {
 }
 
 .categoria-img{
-
     border-radius: 50%;
     overflow: hidden;
     width: 100%;
@@ -459,8 +465,8 @@ span {
 @media(max-width: 770px){
 
     .categorias-flex{
-        flex-wrap: nowrap;
         gap: 8px;
+        padding: 8px;
     }
 
     .categoria{
@@ -477,11 +483,13 @@ span {
     }
 
     .categoria-nombre{
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .productos-destacados-grid{
         grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        padding: 8px;
     }
 
 }

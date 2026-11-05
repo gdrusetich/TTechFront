@@ -65,6 +65,26 @@
         </section>
 
         <section class="productos-destacados">
+
+            <section class="producto-form">
+                <h2>Agregar Producto</h2>
+                <form id = "form-crear-producto">
+                    <div>
+                        <label for="input-nombre">Producto</label>
+                        <input type="text" id="input-nombre" required>
+                    </div>
+                    <div>
+                        <label for="input-precio">Precio</label>
+                        <input type="number" id="input-precio" required>
+                    </div>
+                    <div>
+                        <label for="input-imagen">Ruta Imagen</label>
+                        <input type="text" id="input-imagen" placeholder="Ej: img/teclado-ironman.jfif">
+                    </div>
+                    <button type="submit" id="btn-crear-producto">Crear</button>
+                </form>
+            </section>
+
             <h1 class="productos-destacados-titulo"> Colección Avengers</h1>
             <div class="productos-destacados-grid">
                 <div class="producto">
@@ -101,6 +121,15 @@
 
         </section>
 
+        <button id="boton-agregar-producto"></button>
+        <div id="carrito">
+            <h2>Carrito de Compras</h2>
+            <ul id="lista-carrito"></ul>
+            <button id="vaciar-carrito">Vaciar Carrito</button>
+            <p id="cantidad-productos-carrito">Cantidad de Productos: </p>
+            <p id="precio-total-carrito">Total: </p>
+        </div>
+
         <video class ="video" controls poster="preview.jpg">
             <source src="video.mp4" type="video/mp4">
             Tu navegador no soporta la reproducción del video.
@@ -115,7 +144,8 @@
             <p>© 2026 TalentoTech E-Commerce. Todos los derechos reservados.</p>        
         </a>
     </footer>
-
+    <script src="carrito.js"></script>
+    <script src="javascript.js"></script>
 
 </body>
 

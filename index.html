@@ -38,24 +38,27 @@
             </section>
         </a>
 
-        <section class = "categorias">
+       <section class="categorias">
             <div class="categorias-flex">
-                <a href="pages/teclados.html" class ="categoria">
-                    <img src="img/teclados.jpg" class="categoria-img">
+                <div class="categoria" data-categoria="teclados">
+                    <img src="img/categorias/teclados.jpg" class="categoria-img">
                     <h3 class="categoria-nombre">Teclados</h3>
-                </a>
-                <a href="pages/mouse.html" class = "categoria">
-                    <img src="img/mouse.jfif" class="categoria-img">
-                    <h3 class="categoria-nombre"> Mouse</h3>
-                </a>
-                <a href="pages/auriculares.html" class = "categoria">
-                    <img src="img/auriculares.jfif" class="categoria-img">
-                    <h3 class="categoria-nombre"> Auriculares </h3>
+                </div>
 
-                </a>
+                <div class="categoria" data-categoria="mouse">
+                    <img src="img/categorias/mouse.jfif" class="categoria-img">
+                    <h3 class="categoria-nombre">Mouse</h3>
+                </div>
+
+                <div class="categoria" data-categoria="auriculares">
+                    <img src="img/categorias/auriculares.jfif" class="categoria-img">
+                    <h3 class="categoria-nombre">Auriculares</h3>
+                </div>
             </div>
-        </section>
 
+            <button id="btn-ver-todos">Ver todos</button>
+
+        </section>
         <section class="banner-destacados">
             <div class="banner-destacados-content">
                 <h2 class ="titulo-destacados"> Nuevos Lanzamientos</h2>
@@ -68,7 +71,7 @@
 
             <section class="producto-form">
                 <h2>Agregar Producto</h2>
-                <form id = "form-crear-producto">
+                <form id="form-crear-producto">
                     <div>
                         <label for="input-nombre">Producto</label>
                         <input type="text" id="input-nombre" required>
@@ -78,8 +81,26 @@
                         <input type="number" id="input-precio" required>
                     </div>
                     <div>
-                        <label for="input-imagen">Ruta Imagen</label>
-                        <input type="text" id="input-imagen" placeholder="Ej: img/teclado-ironman.jfif">
+                        <label for="input-imagen">Elegir imágen</label>
+                        <select id="input-imagen">
+                            <option value="">Sin imagen</option>
+                            <option value="img/productos/teclado-america.jfif">Teclado America</option>
+                            <option value="img/productos/teclado-ironman.jfif">Teclado Ironman</option>
+                            <option value="img/productos/mouse-america.jfif">Mouse America</option>
+                            <option value="img/productos/mouse2.jfif">Mouse 2</option>
+                            <option value="img/productos/auricular-araña.jfif">Auricular Spiderman</option>
+                            <option value="img/productos/auricularavengers.jfif">Auriculares Avengers</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="input-categoria">Categoría</label>
+                        <select id="input-categoria" required>
+                            <option value="">Elegí una categoría</option>
+                            <option value="teclados">Teclados</option>
+                            <option value="mouse">Mouse</option>
+                            <option value="auriculares">Auriculares</option>
+                        </select>
                     </div>
                     <button type="submit" id="btn-crear-producto">Crear</button>
                 </form>
@@ -87,6 +108,7 @@
 
             <h1 class="productos-destacados-titulo"> Colección Avengers</h1>
             <div class="productos-destacados-grid">
+<!--
                 <div class="producto">
                     <img src="img/combo avengers.jfif" class="producto-destacado-img">
                     <div class="producto-destacado-titulo"> Combo Teclado Mouse</div>
@@ -117,6 +139,7 @@
                     <div class="producto-destacado-titulo"> Más...</div>
                     <p class="producto-destacado-precio"></p>
                 </div>
+                -->
             </div>
 
         </section>
@@ -124,7 +147,6 @@
         <button id="boton-agregar-producto"></button>
         <div id="carrito">
             <h2>Carrito de Compras</h2>
-            <ul id="lista-carrito"></ul>
             <button id="vaciar-carrito">Vaciar Carrito</button>
             <p id="cantidad-productos-carrito">Cantidad de Productos: </p>
             <p id="precio-total-carrito">Total: </p>
@@ -144,9 +166,9 @@
             <p>© 2026 TalentoTech E-Commerce. Todos los derechos reservados.</p>        
         </a>
     </footer>
-    <script src="carrito.js"></script>
-    <script src="javascript.js"></script>
-
+    <script src="script/carrito.js"></script>
+    <script src="admin.js"></script>
+<!--    <script src="teoria.js"></script>-->
 </body>
 
 </html> 

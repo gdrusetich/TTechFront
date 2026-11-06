@@ -1,9 +1,27 @@
-const carrito = [];
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
-function agregarProducto(producto){
-    carrito.push(producto);
+function guardarCarrito(){
     localStorage.setItem("carrito", JSON.stringify(carrito));
 }
+
+function agregarAlCarrito(producto){
+    carrito.push(producto);
+    guardarCarrito();
+    renderizarCarrito();
+}
+
+function quitarDelCarrito(producto){
+    carrito.splice(producto);
+    guardarCarrito();
+    renderizarCarrito();
+}
+
+function vaciarCarrito(){
+    carrito = [];
+    guardarCarrito();
+    renderizarCarrito();
+}
+
 
 function precioTotal(){
     let total = 0;
@@ -13,15 +31,15 @@ function precioTotal(){
     return total;
 }
 
-const formCrear = document.getElementById("form-crear-producto");
+function renderizarCarrito(){
+    const cantidad = document.getElementById("cantidad-productos-carrito");
+    const total = document.getElementById("precio-total-carrito");
 
-formCrear.addEventListener("submit", function(evento) {
-    evento.preventDefault();
+    cantidad.textContent = "Cantidad de Productos: " + carrito.length;
+    total.textContent = "Precio Total: " + precioTotal();
 
-    const nombre = document.getElementById("input-nombre").value;
-    const precio = document.getElementById("input-precio").value;
-    const imagen = document.getElementById("input-imagen").value;
+}
 
-    crearProducto(nombre, precio, imagen);
-    formCrear.reset();
-});
+document.getElementById("vaciar-carrito").addEventListener("click", vaciarCarrito);
+
+renderizarCarrito();
